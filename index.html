@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- menu de navigation -->
+        <nav> 
+            <a href="#" class="logo">Coding</a>
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+
+                <li>
+                    <button class="btn" id="displayform">Se connecter</button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <section>
+            <div class="sec-container">
+                <div class="form-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <div id="forlogin" class="formheader active">Se connecter</div>
+                            <div id="forRegister" class="formheader">S'inscrire</div>
+                        </div>
+
+                        <div class="card-body" id="formContainer">
+                            <form id="formlogin">
+                                <input type="text" class="form-control" placeholder="@utilisateur">
+                                <input type="password" class="form-control" placeholder="@mot de passe">
+                                <button class="formButton">Connexion</button>
+                            </form>
+
+                            <form id="formRegister" class="toggleform">
+                                <input type="text" class="form-control" placeholder="@utilisateur">
+                                <input type="password" class="form-control" placeholder="@mot de passe">
+                                <input type="password" class="form-control" placeholder="@confirmer mot de passe">
+                                <button class="formButton">Inscription</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
